@@ -43,9 +43,9 @@ export default function Post({ post, user, onDelete }) {
   };
 
   return (
-    <div className="flex flex-col justify-center mt-8">
-      <div className="w-96 max-w-md bg-white border border-gray-300 rounded-lg mb-4 shadow-md flex flex-col">
-        {/* Post Header */}
+    <div className="flex flex-col justify-center items-center mt-8">
+      <div className="w-full sm:w-96 md:max-w-md bg-white border border-gray-300 rounded-lg mb-4 shadow-md flex flex-col ">
+        
         <div className="flex items-center justify-between p-4">
           <div className="flex items-center">
             <div className="ml-3">
@@ -72,7 +72,7 @@ export default function Post({ post, user, onDelete }) {
           </div>
         </div>
 
-        {/* Post Image */}
+        
         {post.imageUrl && (
           <div className="w-full">
             <img
@@ -82,7 +82,8 @@ export default function Post({ post, user, onDelete }) {
             />
           </div>
         )}
-        {/* Post Caption or Edit Field */}
+
+        
         <div className="px-4 py-2">
           {isEditing ? (
             <div className="flex items-center">
@@ -100,14 +101,14 @@ export default function Post({ post, user, onDelete }) {
               </button>
             </div>
           ) : (
-            <div className='flex'>
-              <h1 className='mx-3 text-xl font-bold'>{post.username} :</h1>
+            <div className="flex">
+              <h1 className="mx-3 text-xl font-bold">{post.username} :</h1>
               <p><span className="font-semibold"></span> {post.caption}</p>
             </div>
           )}
         </div>
 
-        {/* Post Actions */}
+        
         <div className="p-4 flex items-center justify-between">
           <div className="flex space-x-4">
             <button onClick={handleLike} className="focus:outline-none">
@@ -125,15 +126,14 @@ export default function Post({ post, user, onDelete }) {
           </button>
         </div>
 
-        {/* Post Likes */}
+        
         <p className="px-4 font-semibold text-sm">
           {likes.length} {likes.length === 1 ? 'like' : 'likes'}
         </p>
 
-        {/* Comments Section */}
+     
         {showComments && (
           <div className="px-4 py-2 text-gray-600">
-            {/* Placeholder for comments */}
             <p>Comments go here...</p>
           </div>
         )}

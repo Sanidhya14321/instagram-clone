@@ -43,7 +43,7 @@ export default function Post({ post, user, onDelete }) {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center mt-8">
+    <div className="flex flex-col justify-center items-center mt-8 ">
       <div className="w-full sm:w-96 md:max-w-md bg-white border border-gray-300 rounded-lg mb-4 shadow-md flex flex-col ">
         
         <div className="flex items-center justify-between p-4">

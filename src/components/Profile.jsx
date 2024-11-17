@@ -32,7 +32,7 @@ export default function Profile({ user }) {
 
   return (
     <motion.div
-      className="container mx-auto px-4 py-8"
+      className="container mx-auto px-4 py-8 sm:ml-48 ml-12"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}

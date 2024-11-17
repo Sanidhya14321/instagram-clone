@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+/* Ensure main content has a margin that matches the width of the sidebar */
+main {
+    margin-left: 16rem; /* Adjust this value based on sidebar width */
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      margin-left: 5rem; /* Adjust for smaller screens */
+    }
+  }
+  
+  
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

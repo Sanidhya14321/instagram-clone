@@ -28,8 +28,8 @@ export default function Home({ user }) {
     };
 
     return (
-        <div className='mt-14'>
-            <div className='w-full flex overflow-x-scroll py-3 px-2 bg-gray-100 border-b border-gray-300'>
+        <div className='mt-14 sm:ml-48 ml-12'>
+            <div className='w-full flex  overflow-x-scroll py-3 px-2 bg-gray-100 border-b border-gray-300 '>
                 {stories.map((story, index) => (
                     <div key={index} className='flex flex-col items-center justify-center mx-2'>
                         <div className='h-16 w-16 rounded-full border-2 border-pink-500 p-1'>

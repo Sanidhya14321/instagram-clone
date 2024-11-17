@@ -16,7 +16,7 @@ const Hero = ({ post, user, onDelete }) => {
     };
 
     return (
-        <div className="flex flex-col items-center space-y-6 bg-gray-100 p-4">
+        <div className="flex flex-col items-center space-y-6 bg-gray-100 p-4 ">
             {prepost.map((post) => (
                 <div key={post.id} className="w-full max-w-md bg-white rounded-lg shadow-lg border border-gray-200">
                     {/* Post Header */}
